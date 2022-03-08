@@ -1,0 +1,26 @@
+.mc {
+    color: #3c3c3cb3;
+}
+.bgg {
+    background: #42B883;
+}
+.bgw {
+    background: #fff;
+}
+.ecenter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.pf {
+    position: fixed;
+}
+.fs13 {
+    font-size: 13px;
+    padding: 4px;
+}
+.max-big-w {
+    max-width: 1302px!important;
+    margin: 15px auto!important;
+}
