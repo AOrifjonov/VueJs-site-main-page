@@ -44,24 +44,17 @@
     padding: 2px 2px;
     width: 60%;
     border-radius: 5px;
+    min-width: 400px;
+    max-width: 400px;
 }
 .input:hover {
-    border-color: green;
-}
-.input:focus {
-    border-color: green;
-}
-.input:active {
-    border-color: green;
-}
-.input:scope {
     border-color: green;
 }
 
 input {
     margin-right: 10px;
     outline: none;
-    width: 74%;
+    width: 280px;
     background: none;
     border: none;
     padding: 8px 10px;
@@ -69,9 +62,10 @@ input {
 }
 
 button {
+    width: 100px;
     outline: none;
     border: none;
-    padding: 6px 20px;
+    padding: 6px 10px;
     border-radius: 3px;
 }
 p {

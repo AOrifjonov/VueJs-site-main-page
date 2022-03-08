@@ -77,5 +77,11 @@ button svg {
     margin-left: 20px;
     color: #929292!important;
 }
+
+@media (max-width: 447px) {
+    .big-text {
+        font-size: 50px;
+    }
+} 
 </style>
 
