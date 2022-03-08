@@ -29,3 +29,8 @@
     max-width: 1000px!important;
     margin: 0 auto;
 }
+
+.max-sm-w {
+    max-width: 850px;
+    margin: 0 auto;
+}

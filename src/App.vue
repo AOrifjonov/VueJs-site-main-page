@@ -2,11 +2,13 @@
 import Navbar from './components/navbar/Navbar.vue'
 import MainPage from './components/main/MainPage.vue'
 import SecondSection from './components/main/SecondSection.vue'
+import Sponsor from './components/main/Sponsor.vue'
 export default {
   components: {
     Navbar,
     MainPage,
-    SecondSection
+    SecondSection,
+    Sponsor
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
 <Navbar />
 <MainPage />
 <SecondSection />
+<Sponsor />
 </template>
 
 <style src="./assets/main.css"></style>
