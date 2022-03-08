@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="p-4 max-mid-w mt-4">
-        <div class="row p-4">
+        <div class="row p-5">
             <div class="col">
                 <h6>
                     Approachable
@@ -61,5 +61,14 @@
 }
 img {
     width: 100px;
+}
+
+.col h6 {
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
+
+.col p {
+    max-width: 220px;
 }
 </style>
