@@ -24,3 +24,8 @@
     max-width: 1302px!important;
     margin: 15px auto!important;
 }
+
+.max-mid-w {
+    max-width: 1000px!important;
+    margin: 0 auto;
+}

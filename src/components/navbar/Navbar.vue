@@ -80,6 +80,7 @@
     border-bottom: 1px solid #dbdbdb;
     margin: 0;
     padding: 0;
+    background: #fff;
 }
 .first-nav {
     display: flex;
