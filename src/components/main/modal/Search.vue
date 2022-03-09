@@ -11,8 +11,8 @@ export default {
 
 <template>
     <div v-if="states.searchWindow" class="search">
-        <div class="search-panel" @click="states.setSearchWindow">
-            <div class="search-section">
+        <div class="search-panel" @click="states.setWindow(false)">
+            <div @click="(e) => e.stopPropagation()" class="search-section">
                 <div class="input">
                     <svg width="25" height="25" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                     <input placeholder="Search docs" type="text">
@@ -94,7 +94,7 @@ export default {
 .bottom {
     display: flex;
     padding: 10px 15px;
-    box-shadow: 0px -1px 0px 0px #858585 ;
+    box-shadow: 0px -1px 10px -5px #858585 ;
     font-size: 12px;
 }
 .first {
@@ -114,4 +114,5 @@ export default {
     margin: 0 10px;
     color: #a8a8a8;
 }
+
 </style>
