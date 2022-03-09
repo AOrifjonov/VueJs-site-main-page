@@ -1,4 +1,5 @@
 <script>
+import {states} from './store/store.js'
 import Navbar from './components/navbar/Navbar.vue'
 import MainPage from './components/main/MainPage.vue'
 import SecondSection from './components/main/SecondSection.vue'
@@ -13,17 +14,24 @@ export default {
     Sponsor,
     Footer,
     Search,
+  },
+  data() {
+    return {
+      states,
+    }
   }
 }
 </script>
 
 <template>
-<Navbar />
-<MainPage />
-<SecondSection />
-<Sponsor />
-<Search/>
-<Footer />
+<div :class="states.day ? 'night' : 'day'">
+  <Navbar />
+  <MainPage />
+  <SecondSection />
+  <Sponsor />
+  <Search/>
+  <Footer />
+</div>
 </template>
 
 <style src="./assets/main.css"></style>

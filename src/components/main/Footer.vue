@@ -1,5 +1,15 @@
+<script>
+import {states} from '../../store/store.js'
+export default {
+    data() {
+        return {
+            states
+        }
+    }
+}
+</script>
 <template>
-    <div class="footer">
+    <div :class="states.day ? 'night footer' : 'footer'">
         <div class="max-sm-w">
             <p class="text-center mt-4">
                 Subscribe to our weekly newsletter.
@@ -16,7 +26,7 @@
             </p>
         </div>
     </div>
-    <footer>
+    <footer :class="states.day ? 'second-footer night' : 'second-footer'">
         <div class="max-sm-w p-3 text-center">
             <p class="mt-1">
                 Released under the <b>MIT License</b>. <br>
@@ -77,10 +87,10 @@ p {
     font-size: 14px;
     margin-bottom: 4rem;
 }
-footer {
+.second-footer {
     background: #f9f9f9;
 }
-footer p {
+.second-footer p {
     font-size: 13px;
 }
 </style>

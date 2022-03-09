@@ -71,4 +71,8 @@ img {
 .col p {
     max-width: 220px;
 }
+.col {
+    min-width: 250px;
+    max-width: 290px;
+}
 </style>

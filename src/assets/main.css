@@ -34,3 +34,8 @@
     max-width: 850px;
     margin: 0 auto;
 }
+
+.night {
+    background: #111111!important;
+    color: #c2c2c2!important;
+}

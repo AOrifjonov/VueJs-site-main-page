@@ -1,8 +1,10 @@
 <script>
+import {states} from '../../store/store.js'
 export default {
   name: "Sponsor",
   data() {
     return {
+      states,
       gold: [
         { url: "https://sponsors.vuejs.org/images/vuemastery.avif" },
         { url: "https://sponsors.vuejs.org/images/laravel.avif" },
@@ -32,49 +34,49 @@ export default {
     <div>
       <h4>Platinum Sponsors</h4>
       <div class="platinum row mt-4">
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/vueschool.avif"
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/vehikl.avif"
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/passionate_people.png"
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/storyblok.avif"
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img src="https://sponsors.vuejs.org/images/ionic.avif" alt="photo" />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img src="https://sponsors.vuejs.org/images/nuxt.avif" alt="photo" />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/refurbed.avif"
             alt="photo"
           />
         </div>
-        <div class="col">
+        <div :class="states.day ? 'night col' : 'col'">
           <img
             src="https://sponsors.vuejs.org/images/buttercms.svg"
             alt="photo"
           />
         </div>
-        <div class="col">Your logo</div>
+        <div :class="states.day ? 'night col' : 'col'">Your logo</div>
       </div>
     </div>
 
@@ -82,7 +84,7 @@ export default {
     <div class="mt-5">
       <h4>Gold sponsors</h4>
       <div class="gold row mt-4">
-            <div v-for="img in gold" :key="img" class="col">
+            <div v-for="img in gold" :key="img" :class="states.day ? 'night col' : 'col'">
                 <img :src="img.url" alt="photo">
             </div>
       </div>

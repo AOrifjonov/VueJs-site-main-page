@@ -5,13 +5,13 @@ export default {
         return {
             states,
         }
-    }
+    },
 }
 </script>
 
 <template>
     <h6 class="text-white bgg text-center p1 pf w-100 fs13">Vue 3 is now the new default version! Learn more</h6>
-    <div class="main-nav">
+    <div :class="states.day ? 'main-nav night' : 'main-nav'">
         <div class="max-big-w d-flex w-100">
             <!-- Main nav first section -->
             <div class="first-nav">
@@ -51,7 +51,7 @@ export default {
                 <div class="item">Sponsor</div>
                 <div class="item">
                     <div class="form-check form-switch d-flex align-items-center">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                        <input v-model="states.day" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
                     </div>
                 </div>
                 <div class="item">
@@ -151,6 +151,11 @@ export default {
 .item {
     margin: 0 8px;
     font-size: 15px;
+    cursor: pointer;
+}
+.item:hover {
+    color: #817e7e;
+    transition-duration: 400ms;
 }
 .item svg {
     color: #838383;
